@@ -141,18 +141,65 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <None Include="textures\untitled.tmx" />
+    <None Include="textures\World1-1\map-test.tmx" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\HK1 2021-2022\gamedev-intro-tutorials-dx10\00-Intro\main.cpp" />
+    <ClCompile Include="Animation.cpp" />
+    <ClCompile Include="Animations.cpp" />
+    <ClCompile Include="debug.cpp" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="GameObject.cpp" />
+    <ClCompile Include="Layer.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Map.cpp" />
+    <ClCompile Include="Mario.cpp" />
+    <ClCompile Include="Sprite.cpp" />
+    <ClCompile Include="Sprites.cpp" />
+    <ClCompile Include="Textures.cpp" />
+    <ClCompile Include="TileSet.cpp" />
+    <ClCompile Include="tinyXML\tinyxml\tinystr.cpp" />
+    <ClCompile Include="tinyXML\tinyxml\tinyxml.cpp" />
+    <ClCompile Include="tinyXML\tinyxml\tinyxmlerror.cpp" />
+    <ClCompile Include="tinyXML\tinyxml\tinyxmlparser.cpp" />
+    <ClCompile Include="Utils.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Animation.h" />
+    <ClInclude Include="AnimationFrame.h" />
+    <ClInclude Include="Animations.h" />
+    <ClInclude Include="debug.h" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="GameObject.h" />
+    <ClInclude Include="Layer.h" />
+    <ClInclude Include="Map.h" />
+    <ClInclude Include="Mario.h" />
+    <ClInclude Include="Sprite.h" />
+    <ClInclude Include="Sprites.h" />
+    <ClInclude Include="Texture.h" />
+    <ClInclude Include="Textures.h" />
+    <ClInclude Include="TileSet.h" />
+    <ClInclude Include="tinyXML\tinyxml\tinystr.h" />
+    <ClInclude Include="tinyXML\tinyxml\tinyxml.h" />
+    <ClInclude Include="Utils.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="brick.png" />
+    <Image Include="mario.ico" />
+    <Image Include="textures\enemies.png" />
+    <Image Include="textures\mario.png" />
+    <Image Include="textures\misc.png" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
     <Import Project="packages\Microsoft.DXSDK.D3DX.9.29.952.8\build\native\Microsoft.DXSDK.D3DX.targets" Condition="Exists('packages\Microsoft.DXSDK.D3DX.9.29.952.8\build\native\Microsoft.DXSDK.D3DX.targets')" />
+    <Import Project="packages\tinyxml.2.8.2.3\build\native\tinyxml.targets" Condition="Exists('packages\tinyxml.2.8.2.3\build\native\tinyxml.targets')" />
   </ImportGroup>
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
     <Error Condition="!Exists('packages\Microsoft.DXSDK.D3DX.9.29.952.8\build\native\Microsoft.DXSDK.D3DX.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.DXSDK.D3DX.9.29.952.8\build\native\Microsoft.DXSDK.D3DX.targets'))" />
+    <Error Condition="!Exists('packages\tinyxml.2.8.2.3\build\native\tinyxml.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\tinyxml.2.8.2.3\build\native\tinyxml.targets'))" />
   </Target>
 </Project>
