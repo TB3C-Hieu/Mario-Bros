@@ -49,8 +49,8 @@
 CMario* mario;
 CMario* goomba;
 Map* map;
-#define MARIO_START_X 10.0f
-#define MARIO_START_Y 130.0f
+#define MARIO_START_X 500.0f
+#define MARIO_START_Y 500.0f
 #define MARIO_START_VX 0.1f
 
 CBrick* brick;
