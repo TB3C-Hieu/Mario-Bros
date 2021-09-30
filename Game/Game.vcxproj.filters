@@ -19,9 +19,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-    <None Include="textures\World1-1\map-test.tmx">
-      <Filter>Resource Files</Filter>
-    </None>
     <None Include="textures\untitled.tmx">
       <Filter>Resource Files</Filter>
     </None>

@@ -142,7 +142,6 @@
   <ItemGroup>
     <None Include="packages.config" />
     <None Include="textures\untitled.tmx" />
-    <None Include="textures\World1-1\map-test.tmx" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Animation.cpp" />
